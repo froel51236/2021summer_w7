@@ -1,0 +1,198 @@
+/** 排版 **/
+*, *::before, *::after {
+    box-sizing:border-box;
+  }
+  
+  *{
+    box-sizing:border-box;
+  }
+  
+  .d-f {
+    display: flex;
+  }
+  
+  .d-b {
+    display: block;
+  }
+  
+  .fxw-w {
+    flex-wrap: wrap;
+  }
+  
+  .fd-c {
+    flex-direction: column;
+  }
+  
+  .jc-c {
+    justify-content: center;
+  }
+  
+  .jc-sa {
+    justify-content: space-around;
+  }
+  
+  .jc-sb {
+    justify-content: space-between;
+  }
+  
+  .ai-c {
+    align-items: center;
+  }
+  
+  .maw-412 {
+    max-width: 412px;
+  }
+  
+  .maw-1200 {
+    max-width: 1200px;
+  }
+  
+  /** 間距 **/
+  @for $i from 1 through 48 {
+    .mb-#{$i} {
+      margin-bottom: $i * 2px;
+    }
+  }
+  
+  .pt-26 {
+    padding-top: 26px;
+  }
+  
+  .pt-56 {
+    padding-top: 56px;
+  }
+  
+  .pb-160 {
+    padding-bottom: 160px;
+  }
+  
+  .py-64 {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  
+  
+  /** 文字 **/
+  .ta-c {
+    text-align: center;
+  }
+  
+  .lh-36 {
+    line-height: 36px;
+  }
+  
+  .lh-42 {
+    line-height: 42px;
+  }
+  
+  .fw-500 {
+    font-weight: 500;
+  }
+  
+  .fw-b {
+    font-weight: bold;
+  }
+  
+  .fsz-20 {
+    font-size: 20px;
+  }
+  
+  .c-w {
+    color: #FFFFFF;
+  }
+  
+  .c-b {
+    color: #000;
+  }
+  
+  /** 客製 **/
+  body {
+    line-height: 1.5;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 24px;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+  }
+  
+  .bgc-b {
+    background-color: #000;
+  }
+  
+  .container {
+    margin: 0 auto;
+    font-style: italic;
+    
+    > h2 {
+      font-weight: 500;
+      font-size: 64px;
+      line-height: 84px;
+    }
+    
+    > img {
+      display: block;
+    }
+  }
+  
+  .banner {
+    background-image: url("https://hexschool.github.io/webLayoutTraining1st/week2/banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 958px;
+  }
+  
+  .h1 {
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 106px;
+    > span {
+      font-size: 24px;
+    }
+  }
+  
+  .work li {
+    margin-bottom: 48px;
+    
+    > img {
+      display: block;
+      margin-bottom: 16px;
+    }
+    
+    > p {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 42px;
+    }
+  }
+  
+  .work-experience {
+    border-top: 1px solid #000;
+  }
+  
+  .work-experience li {
+    margin-bottom: 28px;
+    
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      margin-right: 16px;
+      background-color: #891818;
+      border-radius: 50%;
+      vertical-align: middle;
+    }
+  }
+  
+  .contanct {
+    & a {
+      color: inherit;
+      text-decoration: none;
+      
+      &:hover {
+        text-decoration: underline;   
+      }
+    }
+  }
